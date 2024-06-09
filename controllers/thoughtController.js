@@ -1,0 +1,1 @@
+// Placeholder for thought controller
