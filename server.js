@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Placeholder for routes
-// app.use('/api', require('./routes'));
+// Routes
+app.use('/api', require('./routes'));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api', {})
